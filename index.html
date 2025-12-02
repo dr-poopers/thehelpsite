@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <h1>the help site</h1>
+    </header>
+</head>
+
+<body>
+    <script>
+        function LoadPage(value) {
+            document.getElementById("iWindow").src = value;
+        }
+        function LoadSubPage(value) {
+            LoadPage("/subs/"+value);
+        }
+        function LoadLocalPage(value) {
+            document.getElementById("iWindow").src = value + ".html";
+        }
+        function LoadLocalSubPage(value) {
+            LoadLocalPage("/subs/"+value);
+        }
+    </script>
+    <noscript>
+        <p>turn on javascript diddybud</p>
+    </noscript>
+    <h2>
+        how to study for your stuff tutorial
+    </h2>
+    <p>
+        this site is made to help you study with tutorials
+    </p>
+    <div>
+    </div>
+    <h2>
+        Tutorials:
+    </h2>
+    <div></div>
+    <button onclick='LoadLocalSubPage("revisiontutorial", true)'>
+        Revision tutorial
+    </button>
+    <h2>
+        Gaems:
+    </h2>
+    <div></div>
+    <button>
+        math game...
+    </button>
+    <center>
+        <h2>
+            iWindow©
+        </h2>
+        <iframe id="iWindow" src="subs/revisiontutorial.html">    
+    </center>
+</body>
